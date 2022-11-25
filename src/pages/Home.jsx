@@ -102,7 +102,7 @@ function Home() {
             <div className=" text-fc_prim md:mt-16">
               <div className="mb-14">
                 <h1 className="text-6xl font-bold mb-2">
-                  Your Female <br /> Tech Career
+                  Your Female<br /> Tech Career
                 </h1>
                 <span className="text-3xl font-semibold">Starts Here</span>
               </div>
@@ -288,7 +288,7 @@ function Home() {
           <div className="basis-5/6 mx-auto flex flex-col md:flex-row gap-32 md:gap-10">
             <div className="basis-1/2 py-16 fc_bgimg self-center">
               <div className=" fc_bgimg">
-                <img src={L2image} alt="" />
+                <Link to="mission"><img src={L2image} alt="two ladies programing a computer" /></Link>
               </div>
             </div>
 

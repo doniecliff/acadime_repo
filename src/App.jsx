@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Faq from "./components/Faq"
+
+
 import Home from "./pages/Home"
 import Mission from "./pages/Mission"
 import FemAcademy from "./pages/FemAcademy"
@@ -13,6 +16,8 @@ import ContactUs from "./pages/ContactUs"
 import FemReach from "./pages/FemReach"
 import FRAboutUs from "./pages/FRAboutUs"
 import FRDonate from "./pages/FRDonate"
+import FRFaq from "./pages/FRFaq"
+
 
 // a target="_blank"
 function App() {
@@ -32,9 +37,13 @@ function App() {
       {/* <FemReach/> */}
       {/* <FRAboutUs/> */}
       {/* <FRDonate/> */}
+      {/* <FRFaq/> */}
+
 
       <Router>
-      <Header/>
+        <Header/>
+      {/* <Faq/> */}
+
       
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -47,6 +56,9 @@ function App() {
           <Route path="fem_reach" element={<FemReach/>} />
           <Route path="fem_reach/about-us" element={<FRAboutUs/>} />
           <Route path="fem_reach/donate" element={<FRDonate/>} />
+          <Route path="fem_reach/faq" element={<FRFaq/>} />
+
+          <Route path="test" element={<Mission/>} />
         </Routes>
 
         <Footer />
